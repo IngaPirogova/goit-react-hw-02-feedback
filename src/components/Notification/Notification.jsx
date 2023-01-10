@@ -4,11 +4,11 @@ import css from './Notification.module.css';
 export const Notification = ({ message }) => {
   return (
     <div className={css.feedback__notification}>
-      {message && <h2>{message}</h2>}
+      {<h3>{message}</h3>}
     </div>
   );
 };
 
 Notification.propTypes = {
-  message: PropTypes.string,
+  message: PropTypes.string.isRequired,
 };
